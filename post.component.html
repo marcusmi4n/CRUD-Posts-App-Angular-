@@ -1,0 +1,6 @@
+<h2>My Posts</h2>
+<input [(ngModel)]="newPost" placeholder="Write something..." />
+<button (click)="addPost()">Add</button>
+<ul>
+  <li *ngFor="let post of posts">{{ post }}</li>
+</ul>
